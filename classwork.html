@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.30.1/moment.min.js"></script>
+    <script>
+        const date1 = moment('2024-10-27');
+        const date2 = moment('2025-02-16');
+        const daysDifference = date2.diff(date1, 'days');
+        console.log(daysDifference, "days")
+
+        const date3 = moment('2024-10-27');
+        const date4 = moment('2025-02-16');
+        const monthDifference = date4.diff(date3, 'month');
+        console.log(monthDifference, "month")
+
+        const date5 = moment('2005-02-16');
+        const date6 = moment('2024-02-16');
+        const yearDifference = date6.diff(date5, 'year');
+        console.log(yearDifference, "year")
+    </script>
+</body>
+</html>
